@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Random Password Generator</title>
+  </head>
+  <body>
+    <section class="layout">
+      <div class="container">
+        <h1 class="title">Generate Random Password</h1>
+        <br />
+        <div class="display">
+          <div class="input-container">
+            <input id="pass-display" type="text" />
+            <button class="btn" id="cp-btn" onclick="copyPassword()">
+              <img class="cp-img" src="images/copy.png" alt="" />
+            </button>
+          </div>
+          <button class="btn" id="generate-btn" onclick="generatePassword()">
+            <img class="gen-img" src="./images/pass.png" alt="" />
+            Generate
+          </button>
+        </div>
+        <br />
+        <h2>Settings</h2>
+        <div class="settings">
+          <div class="checkbox-container">
+            <p>Select Combination:</p>
+            <input
+              type="checkbox"
+              id="upperCase"
+              name="upperCase"
+              value="upperCase"
+              checked
+            />
+            <label for="upperCase">Uppercase</label><br />
+
+            <input
+              type="checkbox"
+              id="lowerCase"
+              name="lowerCase"
+              value="lowerCase"
+            />
+            <label for="lowerCase">Lowercase</label><br />
+
+            <input
+              type="checkbox"
+              id="numbers"
+              name="numbers"
+              value="numbers"
+            />
+            <label for="numbers">Numbers</label><br />
+            <input
+              type="checkbox"
+              id="symbols"
+              name="symbols"
+              value="symbols"
+            />
+            <label for="symbols">Special Characters</label>
+          </div>
+          <div class="vr"></div>
+
+          <div class="range-container">
+            <label for="range">Length(Between 6 to 12):</label><br />
+            <input id="range" type="range" min="6" max="12" value="6" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>

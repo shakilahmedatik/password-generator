@@ -17,11 +17,19 @@ body {
   justify-content: center;
   width: 100vw;
   height: 100vh;
+  word-wrap: break-word;
 }
 
 .container {
   border: 2px solid white;
-  padding: 50px;
+  padding: 25px 50px;
+}
+
+.title {
+  color: #fbcb61;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
 .input-container {
